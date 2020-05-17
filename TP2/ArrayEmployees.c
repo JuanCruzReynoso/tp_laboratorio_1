@@ -2,13 +2,9 @@
 #include <stdlib.h>
 #include <string.h>
 #include "ArrayEmployees.h"
-#include "myGets.h"
 
 #define  OCUPADO -1
 #define LIBRE 0
-
-#define UP 1
-#define DOWN 0
 
 void initEmployees(Employee listado[], int len)
 {
@@ -333,11 +329,11 @@ int sumarSueldos(Employee listado[], int len)
     int i;
     float acumulador = 0;
 
-    for(i=0;i<len;i++)
+    for(i=0; i<len; i++)
     {
         if (listado[i].isEmpty==OCUPADO)
         {
-        acumulador=acumulador+listado[i].salary;
+            acumulador=acumulador+listado[i].salary;
         }
     }
 
@@ -350,11 +346,11 @@ int promediarSueldos(Employee listado[], int len,float acumulador)
     int contador=0;
     float promedio;
 
-        for(i=0;i<len;i++)
+    for(i=0; i<len; i++)
     {
         if (listado[i].isEmpty==OCUPADO)
         {
-         contador++;
+            contador++;
         }
     }
     promedio=acumulador/contador;
@@ -366,10 +362,22 @@ void printSalary(Employee listado[], int len)
 {
     int sueldoTotal;
     float promedioSueldos;
-
+    int contador=0;
+    int i;
     sueldoTotal=sumarSueldos(listado,len);
     promedioSueldos=promediarSueldos(listado,len,sueldoTotal);
-    printf("\n\tSueldo total: %d \t Promedio de sueldos: %.2f\n",sueldoTotal,promedioSueldos);
+
+    for(i=0; i<len; i++)
+    {
+        if (listado[i].isEmpty==OCUPADO)
+        {
+            if(listado[i].salary>=promedioSueldos)
+            {
+                contador++;
+            }
+        }
+    }
+    printf("\n\tSueldo total: %d \t Promedio de sueldos: %.2f \t Empleados que superan el sueldo promedio : %d \n",sueldoTotal,promedioSueldos,contador);
 
 }
 

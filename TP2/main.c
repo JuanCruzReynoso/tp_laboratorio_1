@@ -4,7 +4,7 @@
 
 #include "ArrayEmployees.h"
 
-#define T 5
+#define T 1000
 
 int main()
 {
