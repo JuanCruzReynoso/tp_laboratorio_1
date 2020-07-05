@@ -13,15 +13,26 @@ typedef struct
  int isEmpty;
 } Employee;
 
-
-
+/** \brief Esta funcion pone la bandera isEmpty en LIBRE(-1) en todas las posiciones del array recibido
+ *
+ * \param Listado[] Employee: Array de empleados que se desea inicializar
+ * \param Len int: Largo del array
+ *
+ */
 void initEmployees(Employee listado[], int len);
 
+/** \brief Recorre el array hasta encontrar el primer isEmpty en LIBRE(-1).
+ *
+ * \param Listado[] Employee: Array de
+ * \param
+ * \return
+ *
+ */
 int buscarLibre(Employee listado[], int len);
 
 void addEmployee(Employee listado[], int len);
 
-int generarId(Employee paramEmployee[], int len);
+int generarId(Employee pEmployee[], int len);
 
 void printEmployee(Employee pEmployee);
 

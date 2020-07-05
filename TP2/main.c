@@ -11,7 +11,7 @@ int main()
     Employee empleados[T];
     int opcion;
 
-  initEmployees(empleados,T);
+    initEmployees(empleados,T);
 
     do
     {
@@ -33,6 +33,7 @@ int main()
             printSalary(empleados,T);
             break;
         case 5:
+            printf("\nCerrando...");
             break;
         default:
             printf("Opcion incorrecta");

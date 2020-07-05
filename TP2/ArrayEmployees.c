@@ -32,23 +32,23 @@ int buscarLibre(Employee listado[], int len)
     return indice;
 }
 
-int generarId(Employee paramEmployee[], int len)
+int generarId(Employee pEmployee[], int len)
 {
-    int retorno= 99;
+    int idAux= 99;
     int i;
 
     for(i=0; i<len; i++)
     {
-        if(paramEmployee[i].isEmpty == OCUPADO)
+        if(pEmployee[i].isEmpty == OCUPADO)
         {
-            if(paramEmployee[i].id > retorno)
+            if(pEmployee[i].id > idAux)
             {
-                retorno = paramEmployee[i].id;
+                idAux = pEmployee[i].id;
             }
         }
     }
 
-    return retorno+1;
+    return idAux+1;
 
 }
 
@@ -88,14 +88,14 @@ void addEmployee(Employee listado[], int len)
 
 void printEmployee(Employee pEmployee)
 {
-    printf("%d \t %8s %4s \t \t%8.2f %10d\n", pEmployee.id, pEmployee.name, pEmployee.lastName, pEmployee.salary, pEmployee.sector);
+    printf("%d \t %12s %4s \t \t%8.2f %10d\n", pEmployee.id, pEmployee.name, pEmployee.lastName, pEmployee.salary, pEmployee.sector);
 }
 
 void printEmployees(Employee listado[], int len)
 {
     int i;
 
-    printf("ID: \t     Nombre y Apellido: \t Salario: \t Sector: \n");
+    printf("\nID: \t     Nombre y Apellido: \t Salario: \t Sector: \n");
 
     for(i=0; i<len; i++)
     {
