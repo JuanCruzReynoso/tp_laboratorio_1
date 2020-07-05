@@ -1,0 +1,54 @@
+# depslib dependency file v1.0
+1593922995 source:c:\users\chilloutket\desktop\tp_laboratorio_1\tp4\abm tp3 prueba mi linked list\controller.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"Employee.h"
+	"parser.h"
+	"myGets.h"
+
+1592312333 c:\users\chilloutket\desktop\tp_laboratorio_1\tp4\abm tp3 prueba mi linked list\linkedlist.h
+
+1593922300 c:\users\chilloutket\desktop\tp_laboratorio_1\tp4\abm tp3 prueba mi linked list\employee.h
+
+1593824656 c:\users\chilloutket\desktop\tp_laboratorio_1\tp4\abm tp3 prueba mi linked list\parser.h
+
+1593918122 c:\users\chilloutket\desktop\tp_laboratorio_1\tp4\abm tp3 prueba mi linked list\mygets.h
+
+1593922300 source:c:\users\chilloutket\desktop\tp_laboratorio_1\tp4\abm tp3 prueba mi linked list\employee.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"Employee.h"
+
+1593991180 source:c:\users\chilloutket\desktop\tp_laboratorio_1\tp4\abm tp3 prueba mi linked list\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
+1593922300 source:c:\users\chilloutket\desktop\tp_laboratorio_1\tp4\abm tp3 prueba mi linked list\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+	"myGets.h"
+
+1593903234 c:\users\chilloutket\desktop\tp_laboratorio_1\tp4\abm tp3 prueba mi linked list\controller.h
+
+1593922747 source:c:\users\chilloutket\desktop\tp_laboratorio_1\tp4\abm tp3 prueba mi linked list\mygets.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"myGets.h"
+
+1593912600 source:c:\users\chilloutket\desktop\tp_laboratorio_1\tp4\abm tp3 prueba mi linked list\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+	"parser.h"
+
